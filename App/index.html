@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>メモ帳</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title-bar">
+    <h1>メモ帳</h1>
+  </div>
+  <div id="title-screen" class="container">
+    <h2>ようこそ！</h2>
+    <p>メモ帳へようこそ。ここでは大切なメモを記録し、保存できます。</p>
+    <button onclick="startApp()">スタート</button>
+  </div>
+  <div id="memo-container" class="container" style="display: none;">
+    <textarea id="memo" placeholder="メモを入力してください..."></textarea>
+    <button onclick="saveMemo()">保存</button>
+    <button onclick="clearMemo()">クリア</button>
+  </div>
+  <div class="memo-list" style="display: none;">
+    <h2>保存されたメモ一覧</h2>
+    <ul id="memoList"></ul>
+    <button onclick="deleteAllMemos()">メモ一括削除</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
